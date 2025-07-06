@@ -42,7 +42,7 @@ body {
 
 /* --- applied the tile holder --- */
 #rack {
-  background-image: url('/static/images/scrabble-tile-holder.png');
+  background-image: url('hw5/static/images/scrabble-tile-holder.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: 30% 100%; /*played around with this number to get it comfortable*/   
