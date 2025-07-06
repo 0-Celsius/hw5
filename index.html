@@ -1,0 +1,50 @@
+<!--
+Files: "index.html"
+GUI Assignment: Hw 5
+Kelvin Lee, UMass Lowell Computer Science, klee@cs.uml.edu
+Copyright (c) 2025 by Kelvin. All rights reserved. May be freely copied or
+excerpted for educational purposes with credit to the author.
+updated by KL on July 4, 2025 at 11:00 PM
+
+Desc:
+  - Just an html file for me to strcture my scrabble game 
+
+
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta Tags -->
+  <meta charset="UTF-8" />
+  <title>Scrabble</title>
+  <!--Styles -->
+  <link rel="stylesheet" href="/static/css/style.css" />
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+
+  <!-- JQuery -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+</head>
+<body>
+  <h1>Scrabble</h1>
+
+  <!-- main content-->
+  <div id="board" class="board"></div>
+  <div id="rack" class="rack"></div>
+
+
+  <!-- buttions: -->
+  <button id="submit">Submit Word</button>
+  <button id="restart">Restart</button>
+
+  <!-- display values: -->
+  <p id="score-display">Score: 0</p>
+  <p id="score-total">Total Score: 0</p>
+  <p id="error-msg"></p>
+  
+  <!-- Scripts -->
+  <script src="/static/js/script.js"></script>
+</body>
+</html>

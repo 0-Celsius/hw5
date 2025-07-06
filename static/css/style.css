@@ -1,0 +1,88 @@
+/*
+    Filename: styles.css
+    Desc:
+        - applied different styles to different things on board and rack/ website in general
+        - are very self explainatory
+*/
+
+
+
+/* --- General body applications; settings for everything --- */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f3f3f3;
+}
+
+/* --- board fixings --- */
+.board {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+/* --- title resizing --- */
+.tile-slot {
+  width: 60px;
+  height: 60px;
+  margin: 5px;
+  border: 2px dashed #aaa;
+  background-color: #fff;
+  position: relative;
+  font-size: 10px;
+
+}
+
+/* --- applies to tiles on rack and rack itself --- */
+.rack {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+/* --- applied the tile holder --- */
+#rack {
+  background-image: url('/static/images/scrabble-tile-holder.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 30% 100%; /*played around with this number to get it comfortable*/   
+  height: 100px;
+  align-items: center;
+  padding: 10px;
+}
+
+/* --- tile resizing again; for the image of the tile --- */
+.tile {
+  width: 60px;
+  height: 60px;
+  margin: 5px;
+  background-size: cover;
+  cursor: grab;
+  position: relative;
+  z-index: 1;
+}
+
+/* --- label for special FX --- */
+.bonus-label {
+  color: black;
+  font-weight: bold;
+  font-size: 15px;
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* --- coloring for bonus bg --- */
+.double-letter { background-color: lightblue; }
+.triple-letter { background-color: blue; }
+.double-word   { background-color: pink; }
+.triple-word   { background-color: red; }
+
+/* --- fixed a display issue for score ; should of made a wrapper tbh --- */
+#score-display {
+  font-size: 20px;
+}
