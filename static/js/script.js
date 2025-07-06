@@ -58,7 +58,7 @@ function refillRack() {
     rack.push(tile);
     const $tile = $("<div>")
       .addClass("tile")
-      .css("background-image", `url('hw5/static/mages/Scrabble_Tiles/Scrabble_Tile_${tile.letter}.jpg')`)
+      .css("background-image", `url('hw5/static/images/Scrabble_Tiles/Scrabble_Tile_${tile.letter}.jpg')`)
       .attr("data-letter", tile.letter)
       .attr("data-value", tile.value);
     $tile.draggable({
