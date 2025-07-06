@@ -21,7 +21,7 @@ let totalScore = 0;
 
 // init everything 
 $(document).ready(function () {
-  $.getJSON("static/graphics_data/pieces.json", function (data) {
+  $.getJSON("../static/graphics_data/pieces.json", function (data) {
     tileData = generateTileBag(data.pieces);
     generateBoard();
     refillRack();
@@ -58,7 +58,7 @@ function refillRack() {
     rack.push(tile);
     const $tile = $("<div>")
       .addClass("tile")
-      .css("background-image", `url('static/css/images/Scrabble_Tiles/Scrabble_Tile_${tile.letter}.jpg')`)
+      .css("background-image", `url('../static/css/images/Scrabble_Tiles/Scrabble_Tile_${tile.letter}.jpg')`)
       .attr("data-letter", tile.letter)
       .attr("data-value", tile.value);
     $tile.draggable({
@@ -101,7 +101,7 @@ function generateBoard() {
       $slot.addClass("double-letter");
       label = "Double Letter";
     } else {
-      $slot.css("background-image", "url('static/css/images/Scrabble_Tiles/Scrabble_Tile_Blank.jpg')");
+      $slot.css("background-image", "url('../static/css/images/Scrabble_Tiles/Scrabble_Tile_Blank.jpg')");
       $slot.css("background-size", "cover");
     }
 
